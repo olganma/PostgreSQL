@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  mysql:
+    image: postgres:12-alpine
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data:/var/lib/mysql
+    environment:
+      - POSTGRES_DB=postgresDB
+      - POSTGRES_USER=netouser
+      - POSTGRES_PASSWORD=100om1000OM
